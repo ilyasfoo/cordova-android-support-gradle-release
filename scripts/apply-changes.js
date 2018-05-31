@@ -27,6 +27,7 @@ function onError(error) {
 }
 
 function getCordovaAndroidVersion(){
+    return V6;
     var testPath = path.join(process.cwd(), 'platforms/android/app/src');
     return fs.existsSync(testPath) ? V7 : V6;
 }
